@@ -5,11 +5,17 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: "Tahoma";
+    font-family: Georgia;
 }
 
 h2 {
     color: black;
+    font-family: Georgia;
+}
+
+section {
+    height: 100vh;
+    vertical-align: middle;
 }
 
 #wrapper {
@@ -48,4 +54,8 @@ h2 {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+}
+
+#story {
+    background-color: rgb(255, 255, 205, 0.75);
 }
