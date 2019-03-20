@@ -1,0 +1,51 @@
+body {
+    background-color: #FFFFE0;
+    background-image: url("photos/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Tahoma";
+}
+
+h2 {
+    color: black;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+  
+#column-left {
+    width: 10px;
+	float: left;
+}
+ 
+#column-center {
+    width: 650px;
+    float: left;
+    padding-right: 10px;
+}
+ 
+#column-right {
+    width: 330px;
+	float: left;
+}
+
+#mapid {
+    height: 500px;
+    width: 650px;
+}
+
+#USCheading {
+    padding: 5px 15px 5px 15px;
+    background-color: rgb(255, 255, 204, 0.75);
+}
+
+#infoArea {
+    background-color: rgb(255, 255, 205, 0.75);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}

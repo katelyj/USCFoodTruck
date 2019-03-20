@@ -1,0 +1,51 @@
+<DOCTYPE! html>
+  <html lang="en">
+
+    <head>
+
+      <title>Food Trucks</title>
+
+      <!-- Custom CSS -->
+      <link href="custom.css" rel="stylesheet">	
+
+      <!-- Leaflet CSS -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+	    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	    crossorigin=""/>
+
+      <!-- Leaflet JavaScript -->
+      <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+	      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>	
+
+      <div id="USCheading">
+        
+        <center><h1>USC Food Trucks</h1>
+        Click on the map to explore the various food trucks around USC!<br>
+        <i>Or scroll to read more...</i><br><br></center>
+      
+      </div><br>
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+          <div id="column-left"></div>
+
+          <div id="column-center">
+            <div id="mapid">
+            <script src="j.js"></script>
+            </div>
+          </div>
+
+          <div id="column-right">
+            <div id="infoArea"></div><br><br>
+          </div>
+
+        </div>
+
+    </body>
+
+  </html>

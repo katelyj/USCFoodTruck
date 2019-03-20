@@ -1,0 +1,53 @@
+//send diagnostic output to console
+//(Ctrl-Shift-J in Chromium & Firefox to reveal console)
+
+//info variables
+
+var amazelist = ["Amazebowls", "A healthy vegan truck serving a variety of smoothie bowls and drinks", "Monday-Friday, 8am-6pm", "link"];
+var armandolist = ["Armando's Lunch Truck", "A hearty lunch truck serving sandwiches, fries, burritos, burgers", "Monday-Friday, 7am-7pm", "link"]
+
+var masterList = [amazelist, armandolist];
+
+//map
+
+var mymap = L.map("mapid").setView([34.028, -118.284], 14.5);
+
+L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+    attribution: "Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>', Imagery © <a href='https://www.mapbox.com/'>Mapbox</a>",
+    id: "mapbox.streets",
+    accessToken: "pk.eyJ1Ijoia2F0ZWx5aiIsImEiOiJjanJqbDM1azcwZHQ3NDNvM3kyYzcyYmxkIn0.9mj3cfrLubaTrN9pm1jazw"
+}).addTo(mymap);
+
+//popups
+
+var amaze = L.marker([34.024204, -118.283840]).addTo(mymap);
+amaze.bindPopup("<b>Amazebowls</b><br>Smoothies and Acai Bowls<br><a href='#' onclick='infoDisplay(0)'>[More Info]</a>");
+
+var armando = L.marker([34.023895, -118.283992]).addTo(mymap);
+armando.bindPopup("<b>Armando's Lunch Truck</b><br>Sandwiches, Burritos, and More<br><a href='#' onclick='infoDisplay(1)'>[More Info]</a>");
+
+//info links
+
+var infoDisplay = function(num) {
+
+    document.getElementById("infoArea").innerHTML = "";
+
+    //name
+    var n = document.createElement("H2");
+    n.innerHTML = "<br>" + masterList[num][0];
+    //description
+    var b = document.createElement("P");
+    b.innerHTML = "<i>" + masterList[num][1] + "</i>";
+    //hours
+    var h = document.createElement("P");
+    h.innerHTML = "<b>Hours:<br></b>" + masterList[num][2];
+    //link
+    var l = document.createElement("P")
+    l.innerHTML = masterList[num][3] + "<br><br><br></center>";
+
+    document.getElementById("infoArea").appendChild(n);
+    document.getElementById("infoArea").appendChild(b);
+    document.getElementById("infoArea").appendChild(h);
+    document.getElementById("infoArea").appendChild(l);
+
+}
