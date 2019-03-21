@@ -59,6 +59,7 @@ var infoDisplay = function(num) {
 }
 
 //scrolling to a section
+
 $(document).ready(function(){
     $( "a.scrollLink" ).click(function( event ) {
         event.preventDefault();
