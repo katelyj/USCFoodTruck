@@ -1,0 +1,7 @@
+To Do (Coding-Wise):
+- Add photo below map descriptor for each truck
+- Make footer (date, authors, usc annenberg media interactives desk, link to main site)
+
+To Do (Reporting-Wise):
+- Interview all trucks
+- Take photos of all trucks

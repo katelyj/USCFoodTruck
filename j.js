@@ -11,7 +11,7 @@ var masterList = [amazelist, armandolist, truckmanlist];
 
 //map
 
-var mymap = L.map("mapid").setView([34.028, -118.284], 15);
+var mymap = L.map("mapid").setView([34.025, -118.285], 16);
 
 L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: "Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>', Imagery © <a href='https://www.mapbox.com/'>Mapbox</a>",
@@ -25,9 +25,9 @@ var amaze = L.marker([34.024204, -118.283840]).addTo(mymap);
 amaze.bindPopup("<b>Amazebowls</b><br>Smoothies and Acai Bowls<br><a href='#' onclick='infoDisplay(0)'>[More Info]</a>");
 
 var armando = L.marker([34.023895, -118.283992]).addTo(mymap);
-armando.bindPopup("<b>Armando's Lunch Truck</b><br>Sandwiches, Burritos, and More<br><a href='#' onclick='infoDisplay(1)'>[More Info]</a>");
+armando.bindPopup("<b>Armando's Lunch Truck (Location #1)</b><br>Sandwiches, Burritos, and More<br><a href='#' onclick='infoDisplay(1)'>[More Info]</a>");
 var armando2 = L.marker([34.025743, -118.286648]).addTo(mymap);
-armando2.bindPopup("<b>Armando's Lunch Truck</b><br>Sandwiches, Burritos, and More<br><a href='#' onclick='infoDisplay(1)'>[More Info]</a>");
+armando2.bindPopup("<b>Armando's Lunch Truck (Location #2)</b><br>Sandwiches, Burritos, and More<br><a href='#' onclick='infoDisplay(1)'>[More Info]</a>");
 
 var truckman = L.marker([34.025798, -118.288564]).addTo(mymap);
 truckman.bindPopup("<b>Food Truck-Man</b><br>Asian Fusion<br><a href='#' onclick='infoDisplay(2)'>[More Info]</a>");
