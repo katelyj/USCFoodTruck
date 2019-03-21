@@ -3,9 +3,9 @@
 
 //info variables
 
-var amazelist = ["Amazebowls", "A healthy vegan truck serving a variety of smoothie bowls and drinks", "Monday-Friday, 8am-6pm", "link"];
-var armandolist = ["Armando's Lunch Truck", "A hearty lunch truck serving sandwiches, fries, burritos, burgers", "Monday-Friday, 7am-7pm", "link"]
-var truckmanlist = ["Food-Truck Man", "Asian fusion served from a bright pink truck", "Monday-Friday, 9am-5pm", "link"]
+var amazelist = ["Amazebowls", "A healthy vegan truck serving a variety of smoothie bowls and drinks", "Monday-Friday, 8am-6pm", "am"];
+var armandolist = ["Armando's Lunch Truck", "A hearty lunch truck serving sandwiches, fries, burritos, burgers", "Monday-Friday, 7am-7pm", "ar"]
+var truckmanlist = ["Food-Truck Man", "Asian fusion served from a bright pink truck", "Monday-Friday, 9am-5pm", "tr"]
 
 var masterList = [amazelist, armandolist, truckmanlist];
 
@@ -49,7 +49,7 @@ var infoDisplay = function(num) {
     h.innerHTML = "<b>Hours:<br></b>" + masterList[num][2];
     //link
     var l = document.createElement("P")
-    l.innerHTML = masterList[num][3] + "<br><br><br></center>";
+    l.innerHTML = "<a href=#" + masterList[num][3] + " class='scrollLink'>Read More</a><br><br><br></center>";
 
     document.getElementById("infoArea").appendChild(n);
     document.getElementById("infoArea").appendChild(b);
@@ -57,3 +57,11 @@ var infoDisplay = function(num) {
     document.getElementById("infoArea").appendChild(l);
 
 }
+
+//scrolling to a section
+$(document).ready(function(){
+    $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 5000);
+    });
+});
