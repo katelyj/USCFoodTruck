@@ -5,12 +5,13 @@
 
 var amazelist = ["Amazebowls", "A healthy vegan truck serving a variety of smoothie bowls and drinks", "Monday-Friday, 8am-6pm", "link"];
 var armandolist = ["Armando's Lunch Truck", "A hearty lunch truck serving sandwiches, fries, burritos, burgers", "Monday-Friday, 7am-7pm", "link"]
+var truckmanlist = ["Food-Truck Man", "Asian fusion served from a bright pink truck", "Monday-Friday, 9am-5pm", "link"]
 
-var masterList = [amazelist, armandolist];
+var masterList = [amazelist, armandolist, truckmanlist];
 
 //map
 
-var mymap = L.map("mapid").setView([34.028, -118.284], 14.5);
+var mymap = L.map("mapid").setView([34.028, -118.284], 15);
 
 L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: "Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>', Imagery © <a href='https://www.mapbox.com/'>Mapbox</a>",
@@ -25,6 +26,11 @@ amaze.bindPopup("<b>Amazebowls</b><br>Smoothies and Acai Bowls<br><a href='#' on
 
 var armando = L.marker([34.023895, -118.283992]).addTo(mymap);
 armando.bindPopup("<b>Armando's Lunch Truck</b><br>Sandwiches, Burritos, and More<br><a href='#' onclick='infoDisplay(1)'>[More Info]</a>");
+var armando2 = L.marker([34.025743, -118.286648]).addTo(mymap);
+armando2.bindPopup("<b>Armando's Lunch Truck</b><br>Sandwiches, Burritos, and More<br><a href='#' onclick='infoDisplay(1)'>[More Info]</a>");
+
+var truckman = L.marker([34.025798, -118.288564]).addTo(mymap);
+truckman.bindPopup("<b>Food Truck-Man</b><br>Asian Fusion<br><a href='#' onclick='infoDisplay(2)'>[More Info]</a>");
 
 //info links
 
