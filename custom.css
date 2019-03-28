@@ -22,7 +22,6 @@ h1 {
 section {
     height: 100vh;
     padding: 0 7%;
-    overflow: auto;
 }
 
 #subhead {
@@ -33,29 +32,27 @@ section {
 }
 
 #wrapper {
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;   
+    flex-wrap: wrap;
 }
   
 #column-left {
-    width: 10px;
-	float: left;
-}
- 
-#column-center {
-    width: 650px;
+    width: 800px;
     float: left;
-    padding-right: 10px;
 }
  
 #column-right {
-    width: 330px;
+    width: 300px;
     float: left;
 }
 
 #mapid {
     height: 400px;
-    width: 650px;
+    width: 750px;
 }
 
 #USCheading {
