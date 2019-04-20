@@ -25,6 +25,10 @@ section {
     overflow: scroll;
 }
 
+#borderimg {
+    box-shadow: 0 0 10px 5px black;
+}
+
 #subhead {
     font-size: 18px; 
     line-height: 32px; 
@@ -74,6 +78,11 @@ section {
     vertical-align: left;
     margin-left: 35%;
     margin-top: 10%;
+}
+
+#ph {
+    margin-top: 10%;
+    text-align: center;
 }
 
 #am {
