@@ -3,15 +3,17 @@
 
 //info variables
 
-var amazelist = ["Amazebowls", "A healthy vegan truck serving a variety of smoothie bowls and drinks", "Monday-Friday, 8am-6pm", "am"];
-var armandolist = ["Armando's Lunch Truck", "A hearty lunch truck serving sandwiches, fries, burritos, burgers", "Monday-Friday, 7am-7pm", "ar"]
-var truckmanlist = ["Food-Truck Man", "Asian fusion served from a bright pink truck", "Monday-Friday, 9am-5pm", "tr"]
+var truckmanlist = ["Food-Truck Man", "Description goes here", "tr"]
+var jclist = ["J.C. Food Court", "Description goes here", "jc"]
+var tacolist = ["El Taco Gourmet", "Description goes here", "ta"]
+var tastylist = ["Tasty Wok Express", "Description goes here", "ar"];
+var chineselist = ["Chinese Street Food", "Description goes here", "am"]
 
-var masterList = [amazelist, armandolist, truckmanlist];
+var masterList = [truckmanlist, jclist, tacolist, tastylist, chineselist];
 
 //map
 
-var mymap = L.map("mapid").setView([34.025, -118.285], 16);
+var mymap = L.map("mapid").setView([34.026, -118.289], 17);
 
 L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: "Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>', Imagery © <a href='https://www.mapbox.com/'>Mapbox</a>",
@@ -21,16 +23,20 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 //popups
 
-var amaze = L.marker([34.024204, -118.283840]).addTo(mymap);
-amaze.bindPopup("<b>Amazebowls</b><br>Smoothies and Acai Bowls<br><a href='#' onclick='infoDisplay(0)'>[More Info]</a>");
+var truckman = L.marker([34.025561, -118.288524]).addTo(mymap); 
+truckman.bindPopup("<b>Food-Truck Man</b><br><i>The Pink Truck</i><br><a href='#wrapper' onclick='infoDisplay(0)'>[More Info]</a>");
 
-var armando = L.marker([34.023895, -118.283992]).addTo(mymap);
-armando.bindPopup("<b>Armando's Lunch Truck (Location #1)</b><br>Sandwiches, Burritos, and More<br><a href='#' onclick='infoDisplay(1)'>[More Info]</a>");
-var armando2 = L.marker([34.025743, -118.286648]).addTo(mymap);
-armando2.bindPopup("<b>Armando's Lunch Truck (Location #2)</b><br>Sandwiches, Burritos, and More<br><a href='#' onclick='infoDisplay(1)'>[More Info]</a>");
+var jc = L.marker([34.025561, -118.288689]).addTo(mymap); 
+jc.bindPopup("<b>J.C. Food Court</b><br><i>The Red and White Truck</i><br><a href='#wrapper' onclick='infoDisplay(1)'>[More Info]</a>");
 
-var truckman = L.marker([34.025798, -118.288564]).addTo(mymap);
-truckman.bindPopup("<b>Food Truck-Man</b><br>Asian Fusion<br><a href='#' onclick='infoDisplay(2)'>[More Info]</a>");
+var taco = L.marker([34.025561, -118.288926]).addTo(mymap); 
+taco.bindPopup("<b>El Taco Gourmet</b><br><i>The Blue Truck</i><br><a href='#wrapper' onclick='infoDisplay(2)'>[More Info]</a>");
+
+var tasty = L.marker([34.025561, -118.289194]).addTo(mymap); 
+tasty.bindPopup("<b>Tasty Wok Express</b><br><i>The White Truck</i><br><a href='#wrapper' onclick='infoDisplay(3)'>[More Info]</a>");
+
+var chinese = L.marker([34.025561, -118.289473]).addTo(mymap); 
+chinese.bindPopup("<b>Chinese Street Food</b><br><i>The Red Truck</i><br><a href='#wrapper' onclick='infoDisplay(4)'>[More Info]</a>");
 
 //info links
 
@@ -43,17 +49,13 @@ var infoDisplay = function(num) {
     n.innerHTML = "<br>" + masterList[num][0];
     //description
     var b = document.createElement("P");
-    b.innerHTML = "<i>" + masterList[num][1] + "</i>";
-    //hours
-    var h = document.createElement("P");
-    h.innerHTML = "<b>Hours:<br></b>" + masterList[num][2];
+    b.innerHTML = masterList[num][1];
     //link
     var l = document.createElement("P")
-    l.innerHTML = "<a href=#" + masterList[num][3] + " class='scrollLink'>Read More</a><br><br><br></center>";
+    l.innerHTML = "<a href=#" + masterList[num][2] + " class='scrollLink'>Read More</a><br><br><i>Or scroll to read them all...</i><br><br><br></center>";
 
     document.getElementById("infoArea").appendChild(n);
     document.getElementById("infoArea").appendChild(b);
-    document.getElementById("infoArea").appendChild(h);
     document.getElementById("infoArea").appendChild(l);
 
 }

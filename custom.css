@@ -1,18 +1,18 @@
 body {
-    background-color: #FFFFE0;
+    background-color: black;
     background-image: url("photos/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: Georgia;
+    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+    overflow: scroll;
 }
 
 h1 {
     color: black;
     width: 90%;
     height: auto;
-    font-family: 'Trocchi', serif; 
     font-size: 45px; 
     font-weight: normal; 
     line-height: 48px; 
@@ -22,10 +22,10 @@ h1 {
 section {
     height: 100vh;
     padding: 0 7%;
+    overflow: scroll;
 }
 
 #subhead {
-    font-family: 'Source Sans Pro', sans-serif; 
     font-size: 18px; 
     line-height: 32px; 
     margin: 0 0 24px;
@@ -57,7 +57,7 @@ section {
 
 #USCheading {
     padding: 10px 15px 5px 15px;
-    background-color: rgb(255, 255, 204, 0.70);
+    background-color: rgb(179, 179, 255, 0.70);
     border-radius: 25px;
 }
 
@@ -69,23 +69,15 @@ section {
     border-radius: 25px;
 }
 
-#transition {
+#intro {
     float: center;
     vertical-align: left;
     margin-left: 35%;
     margin-top: 10%;
 }
 
-#intro {
-    background-color: rgb(255, 255, 205, 0.70);
-    border-radius: 25px;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 25px 50px 25px 100px;
-}
-
 #am {
-    background-color: rgb(255, 255, 205, 0.70);
+    background-color: rgb(179, 179, 255, 0.70);
     border-radius: 25px;
     display: table-cell;
     vertical-align: middle;
@@ -93,7 +85,7 @@ section {
 }
 
 #ar {
-    background-color: rgb(255, 255, 205, 0.70);
+    background-color: rgb(179, 179, 255, 0.70);
     border-radius: 25px;
     display: table-cell;
     vertical-align: middle;
@@ -101,11 +93,27 @@ section {
 }
 
 #tr {
-    background-color: rgb(255, 255, 205, 0.70);
+    background-color: rgb(179, 179, 255, 0.70);
     border-radius: 25px;
     display: table-cell;
     vertical-align: middle;
-    padding: 25px 50px 25px 50px;
+    padding: 25px 50px 25px 100px;
+}
+
+#ta {
+    background-color: rgb(179, 179, 255, 0.70);
+    border-radius: 25px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 25px 50px 25px 100px;
+}
+
+#jc {
+    background-color: rgb(179, 179, 255, 0.70);
+    border-radius: 25px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 25px 50px 25px 100px;
 }
 
 .footer {

@@ -1,4 +1,5 @@
 To Do:
-- Write intro
-- Interview all trucks
-- Take photos of all trucks
+- Write up stories for each truck
+- Write map descriptions for each truck
+- Add photos for each truck
+- Put in audio?
