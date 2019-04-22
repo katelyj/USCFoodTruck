@@ -7,6 +7,8 @@ body {
     background-attachment: fixed;
     font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
     overflow: scroll;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -19,14 +21,34 @@ h1 {
     margin: 0;
 }
 
-section {
+h2 {
+    text-align: center;
+}
+
+#sectionmain {
     height: 100vh;
-    padding: 0 7%;
+    padding: 10 7%;
     overflow: scroll;
+}
+
+#sectionph {
+    height: 100vh;
+    padding: 0 0%;
+}
+
+#sectionnoscroll {
+    height: 100vh;
+    padding: 10 7%;
+    overflow: visible;
 }
 
 #borderimg {
     box-shadow: 0 0 10px 5px black;
+}
+
+#full {
+    height: 100%;
+    width: 100%;
 }
 
 #subhead {
@@ -55,7 +77,7 @@ section {
 }
 
 #mapid {
-    height: 400px;
+    height: 600px;
     width: 750px;
 }
 
@@ -63,6 +85,7 @@ section {
     padding: 10px 15px 5px 15px;
     background-color: rgb(179, 179, 255, 0.70);
     border-radius: 25px;
+    text-align: center;
 }
 
 #infoArea {
@@ -77,12 +100,17 @@ section {
     float: center;
     vertical-align: left;
     margin-left: 35%;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 #ph {
     margin-top: 10%;
     text-align: center;
+}
+
+#t {
+    column-count: 2;
+    column-gap: 20px;
 }
 
 #am {
@@ -135,4 +163,53 @@ section {
     color: white;
     text-align: left;
     font-size: 10px;
+  }
+
+ /* The grid: Three equal columns that floats next to each other */
+#piccolumn {
+    float: left;
+    width: 31%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+ #piccolumn img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  #piccolumn img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .flexcontainer {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
   }

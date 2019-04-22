@@ -18,14 +18,7 @@
         crossorigin=""></script>
 
       <!-- Intro Section -->
-      <section>
-        <div id="intro">
-          <img id="borderimg" src="photos/intro.jpg" height='500' width='700'></img>
-        </div>
-      </section>
-
-      <!-- Intro Section -->
-      <section>
+      <section id="sectionmain">
       <div id="USCheading"><center>
           <a href="http://www.uscannenbergmedia.com/" target="_blank"><img src="photos/annenberg.png" height=30px width=250px></img></a>
           <h1>The Truck, the Myth, the Legend</h1>
@@ -33,17 +26,14 @@
             <p>They're parked there every day, outside the Engemann Student Health Center, waiting patiently for lunch hour. 
             <br>Hungry college students swarm and sit on the grass to eat, enjoying hearty (and affordable) bowls of rice and noodles in the sun.
             <br>But how many of these students actually know the stories behind each truck, and the people working for them?</p>
-            <p>My mother always told me that food is a labor of love. 
-            <br>When somebody cooks for you, they are sharing a part of their identity with you. 
-            <br>They are creating something with their hands for you to take in and derive happiness from.
-            <br>What can we learn about a person, by eating their food?</p>
             <p><i>Click around the map below to learn their stories...</i></p></div>
-      </div><br></center>
+            <img src="photos/intro2.jpg" height='300' width='450'></img><br>
+          </center></div><br>
     </head>
       </section>
 
       <!-- Map Section -->
-      <section>
+      <section id="sectionmain">
         <body>
           <div id="wrapper">
             <div id="column-left">
@@ -55,82 +45,180 @@
           </div>
       </section>
 
+      <section id="sectionmain"></section>
+
+      <!-- Intro Section -->
+      <section id="sectionmain">
+        <div id="intro">
+          <img id="borderimg" src="photos/intro.jpg" height='600' width='800'></img>
+        </div>
+      </section>
+
+      <section id="sectionmain"></section>
+
       <!-- Photo Section -->
-      <section>
+      <section id="sectionph">
         <div id="ph" class="section">
-            <img id="borderimg" src="photos/firstphoto.jpg" height='500' width='700'></img>
+          <img id="borderimg" src="photos/FTM/1.jpg" height="600" width="900"></img>
         </div>
       </section>
 
       <!-- Food-Truck Man Section -->
-      <section>
+      <section id="sectionmain">
         <div id="tr" class="section">
           <h2>Food-Truck Man</h2>
-          <p>I went to the Oshkosh store today, but before I went, I called my Appleton store again. I said, "I know I gave you my number and everything, I’ve been looking for these two candles, I’m going to the Oshkosh store and if you guys have my two candles I will head over there."</p>            
-          <p>I was amazed, she said, “guess what, we have 'em in!" I was like, "what? Please, please put one of each on hold, I bought two Peach Bellini’s a while ago – actually I bought three –  so, I was just gonna take these two Peach Bellini’s back and exchange them." And I thought, "oh my gosh that’s awesome," so I said “I’m gonna go to Oshkosh first, I’m gonna going ahead–“ cause I live in Neenah, I said “I’m gonna go to Oshkosh first and then I’m gonna head all the way to Appleton to get these two candles because I want ‘um and I know that once they get them in they're gonna be gone."  I said “Please hold a three wick Iced Ginger Bread and a three wick Winter Candy Apple.”</p>  
-          <p>She said, “Will do.” Kay, everything’s fine.</p>
-        </div>
+          <div id="t">
+              <div class="row">
+                <div class="column">
+                  <p>With its bright pink color and picturesque menu items, the Food-Truck Man gives USC students a taste of Asian fusion.</p>
+                  <p>“We serve mostly Asian food and Korean barbeque, some Japanese food, and the rest of it is Chinese food,” the truck’s owner Zhe Wang said. “There’s about 400 to 500 Chinese students walking by here every day, so I guess it’s reasonable to have a Chinese food truck here.”</p>
+                  <p>The truck first came to USC for hired catering events, but started permanently parking outside Engemann around two years ago.</p>
+                  <p>“At first we started with doing some events, and then we saw a lot of traffic here, so we started parking here,” Wang said. “We see about 70 customers a day… Some people come twice a day even.”</p>
+                  <p>Wang says the best-selling menu item at the truck is the scrambled eggs with shrimp, though most students choose to get multiple entrees –– a single large-plate item is $10, two is $11, and three is $13.</p>
+                  <p>“It tastes good, and the price is reasonable,” Wang said. “I think our prices are slightly cheaper than the USC Village… All our food is less than $11 with tax included.”</p>
+                  <p>Though the truck’s prices are superior to the restaurants in the village, Wang does not feel like he is in competition with the other food trucks on his street, which are similarly inexpensive.</p>
+                  <p>“It’s not like we are doing much better than the rest of trucks, and it’s not like the rest of the trucks is doing better than us,” he said. “I think we all get about 50-70 customers every day.”</p>
+                  <p>Wang starts working at 8 a.m. every day, and finishes serving food around 7 p.m. before washing dishes and cleaning up. While he loves serving USC students, he hopes the truck can expand to a full restaurant one day.</p>
+                  <p>“[Trucks are] a much smaller investment, using to get started,” he said. “But if I got enough money to open a restaurant, I definitely would do that.”</p>
+                </div>
+              </div>
+            </div>
+          </div>   
       </section>
 
+      <section id="sectionnoscroll"><center>
+        <!-- The grid: three columns -->
+        <div class="row">
+            <div class="column" id="piccolumn">
+              <img src="photos/FTM/2.jpg" height="200" width="300" onclick="myFunction(this);">
+            </div>
+            <div class="column" id="piccolumn">
+              <img src="photos/FTM/3.jpg" height="200" width="300" onclick="myFunction(this);">
+            </div>
+            <div class="column" id="piccolumn">
+              <img src="photos/FTM/4.jpg" height="200" width="300" onclick="myFunction(this);">
+            </div>
+          </div></center>
+          
+          <!-- The expanding image container -->
+          <div class="flex-container">
+              <!-- Close the image -->
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            
+              <!-- Expanded image -->
+              <img id="expandedImg" style="width:100%">
+            
+              <!-- Image text -->
+              <div id="imgtext"></div>
+          </div>
+      </section>
+
+      <section id="sectionph"></section>
+
       <!-- Photo Section -->
-      <section>
+      <section id="sectionph">
         <div id="ph" class="section">
+          <img id="borderimg" src="photos/JCF/1.jpg" height="600" width="900"></img>
         </div>
       </section>
 
       <!-- J.C. Food Court Section -->
-      <section>
+      <section id="sectionmain">
         <div id="jc" class="section">
           <h2>J.C. Food Court</h2>
-          <p>I went to the Oshkosh store today, but before I went, I called my Appleton store again. I said, "I know I gave you my number and everything, I’ve been looking for these two candles, I’m going to the Oshkosh store and if you guys have my two candles I will head over there."</p>            
-          <p>I was amazed, she said, “guess what, we have 'em in!" I was like, "what? Please, please put one of each on hold, I bought two Peach Bellini’s a while ago – actually I bought three –  so, I was just gonna take these two Peach Bellini’s back and exchange them." And I thought, "oh my gosh that’s awesome," so I said “I’m gonna go to Oshkosh first, I’m gonna going ahead–“ cause I live in Neenah, I said “I’m gonna go to Oshkosh first and then I’m gonna head all the way to Appleton to get these two candles because I want ‘um and I know that once they get them in they're gonna be gone."  I said “Please hold a three wick Iced Ginger Bread and a three wick Winter Candy Apple.”</p>  
-          <p>She said, “Will do.” Kay, everything’s fine.</p>
+          <div id="t">
+            <div class="row">
+              <div class="column">
+                <p>Zhuo Yu is a cashier at J.C. Food Court, or “the original Sichuan Taste” in its Chinese name. His family bought the truck three months ago, though the previous owners owned it for three years.</p>
+                <p>“My dad was the chef in a Japanese restaurant, and he’s good at cooking,” Yu said. “He knows how to make it delicious, so that’s why he said, let’s go. It’s going well so far.”</p>
+                <p>Yu says his dad finds it easier working at the truck than in a restaurant, because he can work for himself and have complete control over his own dishes. The two of them work Monday through Saturday for around ten hours per day. </p>
+                <p>Working closely with his dad, Yu offers recommendations to every customer who approaches the truck.</p>
+                <p>“I think we got good service right here. For every customer that comes, we talk to them and try to tell them how to order. If I didn’t tell you, you’d be missing out,” Yu said. “Plus we have a lot of items here. We cook everything every day, every morning. We make everything fresh.”</p>
+                <p>Yu says the truck’s largest customer base is international students from China, and that the truck sees around 70-80 people per day. On regular weekdays, the truck tends to sell out of everything, because people order multiple items as part of a combo.</p>
+                <p>Yu says that as a cashier, he enjoys being able to talk to everyone who comes by.</p>
+                <p>“For some people it’s like being a friend. They come in the afternoon and take a chat with me,” Yu said. “They talk about school and funny things. Some people talk about a girlfriend and a boyfriend, and that’s pretty fun for me.”</p>
+                <p>Yu says this allows him to develop a relationship with customers outside of just serving them food.</p>
+                <p>“I think for me, I’m so friendly because I don’t have to do anything else, so I just talk and they just share with me when something happens to them,” Yu said. “They like to talk to us, almost everyone.”</p>
+              </div>
+              <div class="column">
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      <section id="sectionmain"></section>
+
       <!-- Photo Section -->
-      <section>
+      <section id="sectionph">
         <div id="ph" class="section">
+          <img id="borderimg" src="photos/ETG/1.jpg" height="600" width="900"></img>
         </div>
       </section>
 
       <!-- El Taco Gourmet Section -->
-      <section>
+      <section id="sectionmain">
         <div id="ta" class="section">
           <h2>El Taco Gormet</h2>
-          <p>I went to the Oshkosh store today, but before I went, I called my Appleton store again. I said, "I know I gave you my number and everything, I’ve been looking for these two candles, I’m going to the Oshkosh store and if you guys have my two candles I will head over there."</p>            
-          <p>I was amazed, she said, “guess what, we have 'em in!" I was like, "what? Please, please put one of each on hold, I bought two Peach Bellini’s a while ago – actually I bought three –  so, I was just gonna take these two Peach Bellini’s back and exchange them." And I thought, "oh my gosh that’s awesome," so I said “I’m gonna go to Oshkosh first, I’m gonna going ahead–“ cause I live in Neenah, I said “I’m gonna go to Oshkosh first and then I’m gonna head all the way to Appleton to get these two candles because I want ‘um and I know that once they get them in they're gonna be gone."  I said “Please hold a three wick Iced Ginger Bread and a three wick Winter Candy Apple.”</p>  
-          <p>She said, “Will do.” Kay, everything’s fine.</p>
-        </div>
+          <div id="t">
+              <div class="row">
+                <div class="column">
+                  <p>The oldest of all the Chinese food trucks, El Taco Gourmet –– or in its Chinese name, Chongqing Taste –– has been serving USC students for almost four years now.</p>
+                  <p>“Our customers are always from China,” said Xueying Li, who has worked at the truck for all four of its years. “We have very special Chinese food here — a Chong Qing favorite, kind of spicy chili.”</p>
+                  <p>The truck’s best sellers are the fish with Chinese sauerkraut, and the spicy pickles with rice. Customers get two entrees with a serving of rice, and a free soup with every meal.</p> 
+                  <p>“The meals are a good size because the kids are always hungry,” Li said.</p>
+                  <p>The free soups take around four to five hours to make, the truck’s owner Jin Fu said. One of the secrets to having an authentic taste, she said, is that they use seasonings brought all the way from Chongqing, and pickle their vegetables and peppers themselves following traditional methods.</p>      
+                  <p>The truck is constantly updating their menu, and keeps prices under $10 to accommodate to its college-aged customer base. Li estimates that the truck receives around 200 customers a day.</p>
+                  <p>“We love serving young people,” Li said. “And at the night time, when we’re almost finished, we don’t have too much food left.”</p> 
+                </div>
+              </div>
+            </div>
+          </div>
       </section>
 
+      <section id="sectionmain"></section>
+
       <!-- Photo Section -->
-      <section>
+      <section id="sectionph">
         <div id="ph" class="section">
+          <img id="borderimg" src="photos/TWE/1.jpg" height="600" width="900"></img>
         </div>
       </section>
 
       <!-- Tasty Wok Express Food Section -->
-      <section>
+      <section id="sectionmain">
         <div id="ar" class="section">
           <h2>Tasty Wok Express Food</h2>
-          <p>So let me backtrack. If you guys have been watching my videos you all know that I have been searching high and low ever since they had the candle sale, two for twenty candles at bath and body works.</p>
-          <p>I have been searching for two scents: I have been searching for the Winter Candy Apple and the Ice Ginger Bread. This is the last day of the sale, Sunday. I have been calling my store in Appleton – Appleton in Wisconsin, I want everyone to know. This happened in Appleton. I have been calling my store every day for the past week, wanting these two scents. I want Winter Candy Apple and Ice Ginger Bread.</p>
+          <div id="t">
+            <div class="row">
+              <div class="column"> 
+                  <p>No interview information yet. No interview information yet. No interview information yet. No interview information yet. No interview information yet. No interview information yet.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      <section id="sectionmain"></section>
+
       <!-- Photo Section -->
-      <section>
+      <section id="sectionph">
         <div id="ph" class="section">
+          <img id="borderimg" src="photos/CSF/1.jpg" height="600" width="900"></img>
         </div>
       </section>
 
       <!-- Chinese Street Food Section -->
-      <section>
+      <section id="sectionmain">
         <div id="am" class="section">
           <h2>Chinese Street Food</h2>
-          <p>They were supposed to come out, uh,  they were launching in the stores October 29th, so they were supposed to be out. I have been calling Green Bay, Appleton, Fon du Lac and the outlet in Oshkosh. All four stores don’t have them. That’s not what makes me mad. Ticked me off a little bit, but I thought, ehh, they'll eventually come in, no big whoop. So, I have to calm down because it gets really bad here.</p>
-          <p>So I’ve been calling calling calling. They don’t have them. This morning, well actually yesterday, I called my Appleton store and I said " you know, I hate to bother you again, but I’m calling about these candles." And I said, “If I am harassing you or anything in any way please let me know because I can be quite persistent.” I said so if you want to take down my name and number, like, go ahead and do that so you guys can call me when you get them in." The Appleton store. I gave her my name and number hadn’t heard from her.</p>
+          <div id="t">
+            <div class="row">
+              <div class="column"> 
+                <p>No interview information yet. No interview information yet. No interview information yet. No interview information yet. No interview information yet. No interview information yet.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -141,7 +229,7 @@
 
       <!-- Footer -->
       <div class="footer">
-        <p>All Rights Reserved &copy; USC Annenberg Media 2019 | Interactives Desk | Reporting & Coding: Kate Ly Johnston | Additional Reporting: Andrea Klick & Ling Luo</p>
+        <p>All Rights Reserved &copy; USC Annenberg Media 2019 | Interactives Desk | Reporting & Coding: Kate Ly Johnston | Additional Reporting: Andrea Klick & Ling Luo | Not optimized for mobile, you should probably view this on a desktop</p>
       </div>
 
     </body>

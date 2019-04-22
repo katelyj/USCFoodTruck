@@ -3,11 +3,11 @@
 
 //info variables
 
-var truckmanlist = ["Food-Truck Man", "Description goes here", "tr"]
-var jclist = ["J.C. Food Court", "Description goes here", "jc"]
-var tacolist = ["El Taco Gourmet", "Description goes here", "ta"]
-var tastylist = ["Tasty Wok Express", "Description goes here", "ar"];
-var chineselist = ["Chinese Street Food", "Description goes here", "am"]
+var truckmanlist = ["Food-Truck Man", "FTM/1.jpg", "tr"]
+var jclist = ["J.C. Food Court", "JCF/1.jpg", "jc"]
+var tacolist = ["El Taco Gourmet", "ETG/1.jpg", "ta"]
+var tastylist = ["Tasty Wok Express", "TWE/1.jpg", "ar"];
+var chineselist = ["Chinese Street Food", "CSF/1.jpg", "am"]
 
 var masterList = [truckmanlist, jclist, tacolist, tastylist, chineselist];
 
@@ -49,7 +49,7 @@ var infoDisplay = function(num) {
     n.innerHTML = "<br>" + masterList[num][0];
     //description
     var b = document.createElement("P");
-    b.innerHTML = masterList[num][1];
+    b.innerHTML = "<img src='photos/" + masterList[num][1] + "' height=150' width='250'></img>";
     //link
     var l = document.createElement("P")
     l.innerHTML = "<a href=#" + masterList[num][2] + " class='scrollLink'>Read More</a><br><br><i>Or scroll to read them all...</i><br><br><br></center>";
@@ -68,3 +68,18 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 5000);
     });
 });
+
+//photo gallery
+
+function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  }
