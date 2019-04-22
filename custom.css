@@ -31,6 +31,14 @@ h2 {
     overflow: scroll;
 }
 
+#diffbackground {
+    background-image: url("photos/bg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #sectionph {
     height: 100vh;
     padding: 0 0%;
@@ -171,43 +179,38 @@ h2 {
     padding-bottom: 10px;
   }
 
- /* The grid: Three equal columns that floats next to each other */
 #piccolumn {
     float: left;
     width: 25%;
     padding: 10px;
     box-sizing: border-box;
-  }
+}
   
-  /* Style the images inside the grid */
  #piccolumn img {
     opacity: 0.8; 
     cursor: pointer; 
-  }
+}
   
-  #piccolumn img:hover {
+#piccolumn img:hover {
     opacity: 1;
-  }
+}
   
-  /* Clear floats after the columns */
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  /* The expanding image container (positioning is needed to position the close button and the text) */
-  .flexcontainer {
+.flexcontainer {
     position: relative;
     display: none;
-  }
+}
   
-  /* Closable button inside the image */
-  .closebtn {
+.closebtn {
     position: absolute;
     top: 10px;
     right: 15px;
     color: white;
     font-size: 35px;
     cursor: pointer;
-  }
+}
