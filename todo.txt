@@ -1,5 +1,3 @@
 To Do:
-- Write up stories for each truck
-- Write map descriptions for each truck
-- Add photos for each truck
-- Put in audio?
+- Put in customer audio?
+- Final 2 interview write-ups
