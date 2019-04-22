@@ -80,3 +80,24 @@ function myFunction(imgs, n) {
     // Show the container element (hidden with CSS)
     expandImg.parentElement.style.display = "block";
   }
+
+//audio
+
+var myAudio = new Audio('fry.mp3');
+var isPlaying = false;
+
+function togglePlay() {
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+
+myAudio.onpause = function() {
+  isPlaying = false;
+};
