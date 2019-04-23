@@ -1,6 +1,5 @@
 body {
-    background-color: black;
-    background-image: url("photos/bg.jpg");
+    background-color: #ffffe6;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,14 +28,6 @@ h2 {
     height: 100vh;
     padding: 10 7%;
     overflow: scroll;
-}
-
-#diffbackground {
-    background-image: url("photos/bg1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #sectionph {
@@ -109,7 +100,7 @@ h2 {
 }
 
 #infoArea {
-    background-color: rgb(255, 255, 205, 0.70);
+    background-color: rgb(179, 179, 255, 0.70);
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
